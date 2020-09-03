@@ -7,12 +7,14 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NbThemeModule, NbLayoutModule, NbCardModule, NbMenuModule, NbSidebarModule } from '@nebular/theme';
 import { NbEvaIconsModule  } from '@nebular/eva-icons';
 import { NbMenuServiceComponent } from './nb-menu-service/nb-menu-service.component';
+import { NbSidebarToggleComponent } from './nb-sidebar-toggle/nb-sidebar-toggle.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    NbMenuServiceComponent
+    NbMenuServiceComponent,
+    NbSidebarToggleComponent
   ],
   imports: [
     BrowserModule,

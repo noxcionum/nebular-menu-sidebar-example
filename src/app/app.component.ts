@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { NbIconModule } from '@nebular/theme';
+
 
 @Component({
   selector: 'app-root',
