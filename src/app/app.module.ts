@@ -4,7 +4,7 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { NbThemeModule, NbLayoutModule, NbCardModule, NbMenuModule } from '@nebular/theme';
+import { NbThemeModule, NbLayoutModule, NbCardModule, NbMenuModule, NbSidebarModule } from '@nebular/theme';
 import { NbEvaIconsModule  } from '@nebular/eva-icons';
 import { NbMenuServiceComponent } from './nb-menu-service/nb-menu-service.component';
 
@@ -18,8 +18,9 @@ import { NbMenuServiceComponent } from './nb-menu-service/nb-menu-service.compon
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    NbThemeModule.forRoot({ name: 'dark' }),
+    NbThemeModule.forRoot({ name: 'default' }),
     NbMenuModule.forRoot(),
+    NbSidebarModule.forRoot(),
     NbCardModule,
     NbLayoutModule,
     NbEvaIconsModule

@@ -7,17 +7,8 @@ import { MENU_ITEMS } from './menu';
 @Component({
   selector: 'nb-menu-services',
   template: `
-    <nb-card size="giant">
       <nb-menu tag="menu" [items]="menuItems"></nb-menu>
-      <div class="control-panel">
         <router-outlet></router-outlet>
-        <h3 class="h4">Selected item: {{ selectedItem }}</h3>
-        <button nbButton (click)="addMenuItem()">Add Menu Item</button>
-        <button nbButton (click)="collapseAll()">Collapse all menu items</button>
-        <button nbButton (click)="navigateHome()">Home</button>
-        <button nbButton (click)="getSelectedItem()">Get Selected Item</button>
-      </div>
-    </nb-card>
   `,
   styleUrls: ['nb-menu-service.component.scss'],
 })
