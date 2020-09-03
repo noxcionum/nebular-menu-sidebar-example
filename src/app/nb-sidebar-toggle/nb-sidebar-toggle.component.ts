@@ -1,5 +1,5 @@
-import { Component } from '@angular/core';
 import { NbSidebarService } from '@nebular/theme';
+import { Component, EventEmitter, Input, Output} from '@angular/core';
 
 @Component({
   selector: 'nb-sidebar-toggle',
@@ -16,11 +16,15 @@ export class NbSidebarToggleComponent {
   constructor(private sidebarService: NbSidebarService) {
   }
 
+  @Output() onChanged = new EventEmitter<boolean>();
+  change(increased:any) {
+      this.onChanged.emit(increased);
+  }
+
+
   toggle() {
     this.sidebarService.toggle(false, 'left');
   }
 
-  toggleCompact() {
-    this.sidebarService.toggle(true, 'right');
-  }
+
 }
