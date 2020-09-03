@@ -16,15 +16,14 @@ export class NbSidebarToggleComponent {
   constructor(private sidebarService: NbSidebarService) {
   }
 
-  @Output() onChanged = new EventEmitter<boolean>();
-  change(increased:any) {
-      this.onChanged.emit(increased);
-  }
+ 
 
 
-  toggle() {
+  toggleLeft() {
     this.sidebarService.toggle(false, 'left');
   }
-
+  toggleRight() {
+    this.sidebarService.toggle(false, 'right');
+  }
 
 }
