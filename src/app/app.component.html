@@ -9,11 +9,24 @@
   </nb-sidebar>
 
   <nb-sidebar right tag="right">
-    <nb-menu-services></nb-menu-services>
+    <nb-accordion>
+      <nb-accordion-item>
+       <nb-accordion-item-header>Product Details</nb-accordion-item-header>
+       <nb-accordion-item-body>
+         Item Content
+       </nb-accordion-item-body>
+      </nb-accordion-item>
+     </nb-accordion>
   </nb-sidebar>
+
+
 
   <nb-layout-column>
     Page Content <button nbButton>Hello World</button>
   </nb-layout-column>
+  <nb-layout-column>
+    Page Content <button nbButton>Hello World</button>
+  </nb-layout-column>
+
 
 </nb-layout>
