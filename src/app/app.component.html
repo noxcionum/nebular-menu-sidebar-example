@@ -11,18 +11,29 @@
   <nb-sidebar right tag="right">
     <nb-accordion>
       <nb-accordion-item>
-       <nb-accordion-item-header>Product Details</nb-accordion-item-header>
-       <nb-accordion-item-body>
-         Item Content
-       </nb-accordion-item-body>
+        <nb-accordion-item-header>Product Details</nb-accordion-item-header>
+        <nb-accordion-item-body>
+          Item Content
+
+          <button nbButton outline status="warning">Active</button>
+          <button nbButton disabled>Disabled</button>
+        </nb-accordion-item-body>
       </nb-accordion-item>
-     </nb-accordion>
+    </nb-accordion>
+    <nb-card>
+
+
+    </nb-card>
   </nb-sidebar>
 
 
 
   <nb-layout-column>
-    Page Content <button nbButton>Hello World</button>
+    <nb-card>
+      Page Content 
+      <button nbButton>Hello World</button>
+
+    </nb-card>
   </nb-layout-column>
   <nb-layout-column>
     Page Content <button nbButton>Hello World</button>
