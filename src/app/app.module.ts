@@ -4,7 +4,7 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { NbThemeModule, NbLayoutModule, NbCardModule, NbMenuModule, NbSidebarModule, NbAccordionModule, NbButtonModule,NbIconModule } from '@nebular/theme';
+import { NbThemeModule, NbLayoutModule, NbCardModule, NbMenuModule, NbSidebarModule, NbAccordionModule, NbButtonModule,NbIconModule, NbSidebarService } from '@nebular/theme';
 import { NbEvaIconsModule  } from '@nebular/eva-icons';
 import { NbMenuServiceComponent } from './nb-menu-service/nb-menu-service.component';
 import { NbSidebarToggleComponent } from './nb-sidebar-toggle/nb-sidebar-toggle.component';
@@ -30,7 +30,7 @@ import { NbSidebarToggleComponent } from './nb-sidebar-toggle/nb-sidebar-toggle.
     NbAccordionModule,
     NbIconModule
   ],
-  providers: [],
+  providers: [NbSidebarService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
